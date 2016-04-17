@@ -9,6 +9,10 @@ body {
   background: #442211; background: #442211 -webkit-gradient(linear, left top, left 150%, from(#442211), to(#100000));
 }
 
+.gradient2 {
+  background: #65000D; background: #65000D -webkit-gradient(linear, left top, left 150%, from(#65000D), to(#100000));
+}
+
 .round {
   border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
 }
