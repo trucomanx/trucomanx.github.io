@@ -208,16 +208,17 @@ body {counter-reset:section;}
   background: #C7E3BE; background: #C7E3BE -webkit-gradient(linear, left top, left 150%, from(#C7E3BE), to(#A5956E));
 }
 
-
 .libblock {
   width: 440px;
+  height: 220px;
   padding: 10px;
   margin: 5px;
-  /*padding-right: 10px;*/
   display: inline-block;
   float: left;
-  text-align: justify;
+  /*text-align: justify;*/
+  text-overflow: ellipsis;  /* Adiciona "..." no final do texto */
 }
+
 
 .libblock a {
   text-decoration: none;
@@ -225,6 +226,18 @@ body {counter-reset:section;}
   /*font-weight: bold;*/
   display: inline-block;
   /*text-shadow: 1px 1px 5px gray;*/
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 8; /* number of lines to show */
+           line-clamp: 8; 
+   -webkit-box-orient: vertical;
+   text-overflow: ellipsis;  /* Adiciona "..." no final do texto */
+  hyphens: auto;           /* Permite hífen automático */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .libblock img {
